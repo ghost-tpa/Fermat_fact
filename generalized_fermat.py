@@ -9,7 +9,7 @@ from classical_fermat import factorizeFerma_1, nextPrime
 def main():
     alpha = Frac(11, 7)
     beta = 1000
-    p, q = gen_weak_primes(alpha, beta, 64)
+    p, q = gen_weak_primes(alpha, beta)
     print("DONE GENERATION KEYS")
     N = p * q
     if isinstance(alpha, Frac):
